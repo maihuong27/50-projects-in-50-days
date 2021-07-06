@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    height: 80vh;
+    width: 90vw;
+}
+
+.panel{
+    flex: 1;
+    margin: 10px;
+    border-radius: 50px;
+    transition: flex 0.7s ease-in;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.panel h3{
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 9;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: flex 0.4s ease-in 0.3s;
+}
