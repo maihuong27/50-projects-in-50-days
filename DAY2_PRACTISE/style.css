@@ -1,0 +1,50 @@
+.listItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(173, 172, 172);
+    border-radius: 50%;
+    transition: 0.3s ease-in;
+}
+
+.item.active{
+    border-color: midnightblue;
+}
+
+.line{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(173, 172, 172);
+    transition: 0.3s ease-in;
+}
+
+.line.active{
+    background-color: midnightblue;
+}
+
+.listButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button{
+    background-color: midnightblue;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+
+button:disabled{
+    background-color: rgb(173, 172, 172);
+    cursor: no-drop;
+}
